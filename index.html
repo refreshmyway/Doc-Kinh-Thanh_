@@ -29,6 +29,34 @@
     .back{display:inline-block;margin-bottom:10px}
     .download{margin-left:8px}
   </style>
+<style>
+  /* Ẩn dòng mô tả / subtitle */
+  .subtitle,
+  .helper-text,
+  .notes-text {
+    display: none !important;
+  }
+
+  /* Ẩn chữ “Video Playlist” hoặc phần tiêu đề phụ */
+  .page-title small,
+  .title-note {
+    display: none !important;
+  }
+
+  /* Ẩn ô tìm sách + nút Xóa */
+  .search-bar,
+  input[type="search"],
+  #searchInput,
+  .clear-search {
+    display: none !important;
+  }
+
+  /* Ẩn nút “Danh mục” */
+  .menu-button,
+  .category-btn {
+    display: none !important;
+  }
+</style>
 </head>
 <body>
 <header>
@@ -211,3 +239,4 @@ renderList('all'); parseHash();
 </script>
 </body>
 </html>
+
